@@ -14,26 +14,36 @@ export default defineConfig({
             manifest: {
                 name: "Muneem Ji",
                 short_name: "Muneem Ji",
-                description: "Smart, simple business management for your shop.",
-                theme_color: "#00875A",
-                background_color: "#ffffff",
-                display: "standalone",
-                orientation: "portrait",
+                description:
+                    "Simple shop management and billing app",
+
                 start_url: "/",
-                scope: "/",
+                display: "standalone",
+
+                background_color: "#ffffff",
+                theme_color: "#047857",
+
+                orientation: "portrait",
+
                 icons: [
                     {
-                        src: "/pwa-192x192.png",
+                        src: "/pwa-192.png",
                         sizes: "192x192",
-                        type: "image/png",
+                        type: "image/png"
                     },
                     {
-                        src: "/pwa-512x512.png",
+                        src: "/pwa-512.png",
+                        sizes: "512x512",
+                        type: "image/png"
+                    },
+                    {
+                        src: "/pwa-512.png",
                         sizes: "512x512",
                         type: "image/png",
-                    },
-                ],
-            },
-        }),
-    ],
+                        purpose: "any maskable"
+                    }
+                ]
+            }
+        })
+    ]
 });
